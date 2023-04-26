@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            color: rgb(70, 70, 98);
+            border-top-right-radius: 8%;
+            border-bottom-left-radius:10% ;
+      
+        }
+        th
+        {
+            color:red;
+        }
+        th:hover
+        {
+            color:white;
+            background-color: black;
+        }
+        td
+        {
+            color: rgb(38, 67, 0);
+            font-size: medium;
+        }
+        td:hover
+        {
+            color: rgb(255, 166, 0);
+            background-color: slategrey;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <table cellpadding="20px" cellspacing="20px" border="2px">
+        <h1>EMPLOYEE_TABLE</h1>
+        <tr>
+            <th>Empno</th>
+            <th>Ename</th>
+            <th>Job</th>
+            <th>Mgr</th>
+            <th>Hiredate</th>
+            <th>Sal</th>
+            <th>Comm</th>
+            <th>Deptno</th>
+            <th>Ehttp</th>
+        </tr>
+        {% for i in A %}
+        <tr>
+        <td>{{i.Empno}}</td>
+        <td>{{i.Ename}}</td>
+        <td>{{i.Job}}</td>
+        <td>{{i.Mgr}}</td>
+        <td>{{i.Hiredate}}</td>
+        <td>{{i.Sal}}</td>
+        <td>{{i.Comm}}</td>
+        <td>{{i.Deptno}}</td>
+        <td>{{i.Ehttp}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            background-color: rgb(47, 255, 130);
+            color: crimson;
+            border-top-right-radius: 8%;
+            border-bottom-left-radius:10% ;
+            border-bottom-left-radius: 10%;
+        }
+        th:hover
+        {
+            background-color: cornsilk;
+            color:black
+
+        }
+        td:hover
+        {
+            background-color: hsla(0, 0%, 0%, 0.807);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <table cellpadding="20px" cellspacing="20px" border="2px">
+        <tr>
+            <th>Empno</th>
+            <th>Dname</th>
+            <th>Loc</th>
+        </tr>
+        {% for i in B %}
+        <tr>
+        <td>{{i.Empno}}</td>
+        <td>{{i.Dname}}</td>
+        <td>{{i.Dloc}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
